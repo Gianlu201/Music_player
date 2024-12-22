@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music player</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="music-player">
+      <h1 id="trackName">Coldplay</h1>
+      <p id="artistName">Something just like this</p>
+
+      <div id="disk"></div>
+
+      <div id="songSlider">
+        <input type="range" value="0" class="seek-bar" />
+        <span id="currentTime">00:00</span>
+        <span id="songDuration">00:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="btnPlay" class="pause">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <audio
+      id="player"
+      src="https://cdnt-preview.dzcdn.net/api/1/1/a/e/b/0/aeb58f2f63ee57fb9c47cbe8fb5ccdaa.mp3?hdnea=exp=1734868678~acl=/api/1/1/a/e/b/0/aeb58f2f63ee57fb9c47cbe8fb5ccdaa.mp3*~data=user_id=0,application_id=42~hmac=16da2042848e321a2ceeac78320e0fdd7420dfd2851cbe138e03f0365609bf98"
+      controls
+    ></audio>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
