@@ -104,8 +104,15 @@ function init() {
 btnSearch.addEventListener('click', () => {
   if (searchBar.value) {
     getSearchResult(searchBar.value, searchResult);
+    searchBar.value = '';
   } else {
     appendAlert();
+  }
+});
+
+searchBar.addEventListener('keyup', () => {
+  if (searchBar.value) {
+    getSearchResult(searchBar.value, searchResult);
   }
 });
 

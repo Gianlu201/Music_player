@@ -31,6 +31,7 @@ body {
 }
 
 #trackName {
+  height: 68px;
   font-size: 2em;
   font-weight: 600;
   margin-bottom: 0.4em;
@@ -158,10 +159,15 @@ main {
 }
 
 .card-title,
-#trackName {
+#trackName,
+#artistName {
   display: -webkit-box;
   -webkit-box-direction: vertical;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+#artistName {
+  -webkit-line-clamp: 1;
 }
